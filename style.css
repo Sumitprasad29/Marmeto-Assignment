@@ -1,0 +1,295 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e60023;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Banner */
+.cart-banner {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.cart-banner h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.cart-banner p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* Cart Layout */
+.cart-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Cart Table */
+.cart-table {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.cart-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-table th {
+  background-color:  #F9F1E7;;
+  color: #555;
+}
+
+.cart-table .product-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Cart Summary */
+.cart-summary {
+  flex: 1;
+  background-color: #F9F1E7;;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+  margin-bottom: 1rem;
+}
+
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.total-price {
+  color: #B88E2F;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cart-summary button {
+  width: 100%;
+  background-color: #F9F1E7;
+  padding: 0.8rem;
+  color: black;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background-color: #F9F1E7;
+  padding: 2.5rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-icons div {
+  text-align: center;
+}
+
+.footer-icons span {
+  font-size: 2rem;
+  color: #e60023;
+}
+
+.footer-icons p {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+  }
+
+  .cart-layout {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .cart-table {
+    width: 100%;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .cart-banner p {
+    font-size: 0.8rem;
+  }
+
+  .cart-layout {
+    gap: 1rem;
+  }
+
+  .footer-icons div {
+    flex: 1 1 50%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 0.5rem;
+  }
+
+  .cart-banner h1 {
+    font-size: 1.2rem;
+  }
+
+  .cart-summary {
+    padding: 1rem;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Marmeto Cart Page</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="src/logo.png " alt="Marmeto Logo">
+            <div class="logo">Marmeto</div>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="icons">
+            <span>🔍</span>
+            <span>❤️</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="cart-banner">
+        <h1>Cart</h1>
+        <p>Home > Cart</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="cart-layout">
+        <!-- Cart Table -->
+        <section class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-list">
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Cart Summary -->
+        <aside class="cart-summary">
+            <h2>Cart Totals</h2>
+            <div class="totals-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">₹0.00</span>
+            </div>
+            <div class="totals-row">
+                <span>Total:</span>
+                <span class="total-price" id="total">₹0.00</span>
+            </div>
+            <button id="checkout-btn">Check Out</button>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <div>
+                <span>🏆</span>
+                <p>High Quality<br>crafted from top materials</p>
+            </div>
+            <div>
+                <span>✅</span>
+                <p>Warranty Protection<br>Over 2 years</p>
+            </div>
+            <div>
+                <span>🚚</span>
+                <p>Free Shipping<br>Order over 150$</p>
+            </div>
+            <div>
+                <span>📞</span>
+                <p>24/7 Support<br>Dedicated support</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
